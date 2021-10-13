@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shape : MonoBehaviour
 {
-    public static float force { get; private set; }
+    public static float force { get; private set; } // ENCAPSULATION
     public float torque = 1000.0f;
     public bool isGrounded;
 
@@ -25,11 +25,6 @@ public class Shape : MonoBehaviour
             GetComponent<Rigidbody>().AddForce(Vector3.up * force, ForceMode.Impulse);
             isGrounded = false;
         }
-    }
-
-    public void PrintText()
-    {
-
     }
 
     public void OnCollisionEnter(Collision collision)

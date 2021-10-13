@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CubeShape : Shape
+public class CubeShape : Shape // INHERITANCE
 {
-    public override void OnMouseDown()
+    public override void OnMouseDown() // POLYMORPHISM
     {
         Jump();
     }
 
-    public override void Jump()
+    public override void Jump() // ABSTRACTION
     {
         if (isGrounded == true)
         {
